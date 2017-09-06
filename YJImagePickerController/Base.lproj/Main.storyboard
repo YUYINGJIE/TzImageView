@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="调取系统多选相册" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lyq-WS-Z94">
+                                <rect key="frame" x="117.5" y="90" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aaO-8s-ZOc">
+                                <rect key="frame" x="0.0" y="135" width="375" height="120"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="qpe-eB-Xah"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="根据URL获取网络图片展示放大预览" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wX-7M-PBP">
+                                <rect key="frame" x="49.5" y="286" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t7Y-bu-5uw">
+                                <rect key="frame" x="0.0" y="346" width="375" height="120"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="114-Si-iil"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t7Y-bu-5uw" firstAttribute="top" secondItem="2wX-7M-PBP" secondAttribute="bottom" constant="39" id="3FC-Fz-She"/>
+                            <constraint firstItem="aaO-8s-ZOc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6rE-Yk-8S9"/>
+                            <constraint firstItem="2wX-7M-PBP" firstAttribute="centerX" secondItem="Lyq-WS-Z94" secondAttribute="centerX" id="IMu-Nc-nvv"/>
+                            <constraint firstAttribute="trailing" secondItem="t7Y-bu-5uw" secondAttribute="trailing" id="JKM-ti-gJi"/>
+                            <constraint firstItem="t7Y-bu-5uw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lbn-JP-ScL"/>
+                            <constraint firstItem="aaO-8s-ZOc" firstAttribute="top" secondItem="Lyq-WS-Z94" secondAttribute="bottom" constant="24" id="PLV-7C-DD5"/>
+                            <constraint firstAttribute="trailing" secondItem="aaO-8s-ZOc" secondAttribute="trailing" id="PPo-MX-DhK"/>
+                            <constraint firstItem="Lyq-WS-Z94" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="UEs-2m-g6t"/>
+                            <constraint firstItem="2wX-7M-PBP" firstAttribute="top" secondItem="aaO-8s-ZOc" secondAttribute="bottom" constant="31" id="hhk-uE-6GU"/>
+                            <constraint firstItem="Lyq-WS-Z94" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mqS-RT-DiT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="SystemImageContenView" destination="aaO-8s-ZOc" id="dZd-3n-G1I"/>
+                        <outlet property="UrlImageContentView" destination="t7Y-bu-5uw" id="yPs-Sx-Zo9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
